@@ -1,0 +1,28 @@
+<!-- 2048.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>2048</title>
+	<link rel="stylesheet" href="2048.css">
+	<script src="animation.js"></script>
+	<script src="2048.js"></script>
+</head>
+<body>
+	<!-- 分数 -->
+	<p>Score:<span id="score">0</span></p>
+	
+	<!-- 实现游戏的网格 -->
+	<div id="gridPanel">
+	</div>	
+
+	<div id="gameOver"><!--同时包含前景和背景的容器-->
+		<div><!--半透明灰色背景--></div>
+	 	<p><!--居中小窗口-->
+	 		Game Over!<br>
+	 		Score:<span id="finalScore"></span><br>
+	  		<a class="button" id="restart" onclick="game.start()">Try again!</a>
+		</p>
+	</div>
+</body>
+</html>
